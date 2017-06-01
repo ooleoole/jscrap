@@ -36,20 +36,19 @@ function Emp(name, salary) {
 
     this.name = name;
     this.salary = salary;
+    this.company = "OdenBidlear";
 
-    this.issuePaycheck = function () {
-        var monthly = this.salary / 12;
-        console.log(this.name + " " + monthly);
-    }
 
 }
-Emp.company = "OdenBidlear"
+
 Emp.prototype.issuePaycheck = function () {
     var monthly = this.salary / 12;
     console.log(this.name + " " + monthly + " " + this.company);
 }
 
 var emp = new Emp("ola", 123456789)
+
+
 emp.issuePaycheck();
 
 var emp2 = new Emp("carin", 12345679)
