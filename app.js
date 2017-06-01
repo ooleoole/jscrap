@@ -28,6 +28,7 @@ function addSomeText(){
     li.appendChild(document.createTextNode(text));
     li.setAttribute("id","li"+g());
     ul.appendChild(li);
+    document.getElementById("input").value="";
 
 
 }
